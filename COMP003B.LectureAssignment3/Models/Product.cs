@@ -6,8 +6,9 @@ namespace COMP003B.LectureAssignment3.Models
     {
         //add the necessary attributes to the properties of the product class. 
         public int Id { get; set; }
+
         [Required]
-        [StringLength (100)]
+        [StringLength(100)]
         public string Name { get; set; }
 
         [Range(0.01, 10000)]

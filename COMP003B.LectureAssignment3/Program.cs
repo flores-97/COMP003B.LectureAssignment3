@@ -4,7 +4,9 @@
  * Faculty: Jonathon Cruz
  * Purpose: Demonstrates routing, model binding, and validation in ASP.NET Core MVC.
  */
- namespace COMP003B.LectureAssignment3
+using COMP003B.LectureAssignment3.Middleware;
+
+namespace COMP003B.LectureAssignment3
 {
     public class Program
     {
@@ -29,7 +31,7 @@
 
             app.UseStaticFiles();
 
-            app.UseMiddleware<RequestLoggingMiddleware>
+            app.UseMiddleware<RequestLoggingMiddleware>();
 
             app.UseRouting();
 
