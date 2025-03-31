@@ -29,6 +29,8 @@
 
             app.UseStaticFiles();
 
+            app.UseMiddleware<RequestLoggingMiddleware>
+
             app.UseRouting();
 
             app.UseAuthorization();
